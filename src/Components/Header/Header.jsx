@@ -2,10 +2,10 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
     const links = <>
-        <li><NavLink to={'/'}>Home</NavLink></li>
-        <li><NavLink to='/jobs'>Jobs</NavLink></li>
-        <li><NavLink to='/applied'>Applied Jobs</NavLink></li>
-        <li><NavLink to='/blogs'>Blogs</NavLink></li>
+        <li className ='text-xl'><NavLink to={'/'}>Home</NavLink></li>
+        <li className="text-xl"><NavLink to='/jobs'>Jobs</NavLink></li>
+        <li className="text-xl"><NavLink to='/applied'>Applied Jobs</NavLink></li>
+        <li className="text-xl"><NavLink to='/blogs'>Blogs</NavLink></li>
     </>
     return (
         <div className="navbar bg-base-100">

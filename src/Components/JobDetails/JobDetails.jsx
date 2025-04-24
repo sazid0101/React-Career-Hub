@@ -9,7 +9,7 @@ const JobDetails = () => {
     const {job_description,job_responsibility,educational_requirements,experiences,job_title,job_type,salary,location} =SingleJob
     return (
             <div>
-                <h2 className="text-4xl font-bold flex justify-center pb-10">Job Details</h2>
+                <h2 className="text-4xl font-bold flex justify-center pb-10 mt-10">Job Details</h2>
                 <div className=" grid grid-cols-4 gap-4">
 
                 <div className="border col-span-3 p-5 bg-slate-300 rounded-lg">
@@ -47,7 +47,7 @@ const JobDetails = () => {
                     <div className='flex items-center gap-1 pb-1'><MdLocationOn />
                     <p>Address: {location}</p> </div>
 
-                    <button className="btn btn-outline btn-accent mt-20 px-10 py-2 text-xl">Apply</button>
+                    <button className="btn btn-outline btn-accent mt-20 px-10 py-2 text-xl w-full">Apply</button>
                 </div>
             </div>
             </div>

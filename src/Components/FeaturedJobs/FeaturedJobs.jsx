@@ -21,7 +21,7 @@ const FeaturedJobs = () => {
                     jobs.slice(0, showAllData).map(job => <Job key={job.id} job={job}></Job>)
                 }
             </div>
-            <div className="mt-5 flex justify-center">
+            <div className={`mt-5 flex justify-center ${jobs.length === showAllData ? 'hidden' : ''}`}>   
                 <button onClick={()=> setShowAllData(jobs.length)} className="btn btn-success text-white">Show All</button></div>
         </div>
     );

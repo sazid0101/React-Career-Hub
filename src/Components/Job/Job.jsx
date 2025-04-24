@@ -1,9 +1,10 @@
 import React from 'react';
 import { CiLocationOn } from "react-icons/ci";
 import { MdAttachMoney } from "react-icons/md";
+import { Link } from 'react-router-dom';
 
 const Job = ({ job }) => {
-    const { logo, job_title, company_name, remote_or_onsite, job_type, location, salary } = job
+    const {id, logo, job_title, company_name, remote_or_onsite, job_type, location, salary } = job
     return (
         <div className="card bg-base-200 shadow-lg mt-10">
             <figure>
@@ -28,7 +29,9 @@ const Job = ({ job }) => {
                     </div>
                 </div>
                 <div className="card-actions justify-center">
-                    <button className="btn btn-primary">View Details</button>
+                    <Link to={`/job/${id}`}>
+                        <button className="btn btn-primary">View Details</button>
+                    </Link>
                 </div>
             </div>
         </div>

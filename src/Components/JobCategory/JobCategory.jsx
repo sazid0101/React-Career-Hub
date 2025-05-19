@@ -9,6 +9,7 @@ const JobCategory = () => {
         fetch('categories.json')
         .then(Response => Response.json())
         .then(data => setJobsCategory(data))
+        
     },[])
     
     return (
